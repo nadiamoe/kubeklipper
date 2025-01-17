@@ -5,6 +5,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v0.12.14 - 2025-01-17
+
+### ⛓️ Dependencies
+- Updated mkuf/ustreamer to v6.22
+- Updated ghcr.io/mainsail-crew/mainsail to v2.13.2
+- Updated alexxit/go2rtc to v1.9.8
+
 ## v0.12.13 - 2024-12-16
 
 ### ⛓️ Dependencies
