@@ -1,8 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base", // Everything that renovatebot supports by default
-    ":semanticCommitsDisabled" // Chore this, chore that, chore the heck out.
+    "github>nadiamoe/renovate-config",
   ],
-  "helm-values": {},
+  "packageRules": [
+    {
+      "matchPackageNames": ["mkuf/klipper"],
+      "matchDatasources": ["docker"],
+      "versioning": "loose",
+    },
+  ]
 }
