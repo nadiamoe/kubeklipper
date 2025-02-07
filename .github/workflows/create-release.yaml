@@ -19,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           fetch-depth: 0
 
       # Create release-toolkit data file and hydrate it.
       - name: Generate changelog YAML
-        uses: newrelic/release-toolkit/generate-yaml@v1
+        uses: newrelic/release-toolkit/generate-yaml@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
         with:
           excluded-dirs: .github
           excluded-files: README.md
@@ -33,22 +33,22 @@ jobs:
       # Check if we have something to release and if the release is not blocked.
       - name: Check if the release is empty
         id: empty
-        uses: newrelic/release-toolkit/is-empty@v1
+        uses: newrelic/release-toolkit/is-empty@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
       - name: Check if the release is held
         id: held
-        uses: newrelic/release-toolkit/is-held@v1
+        uses: newrelic/release-toolkit/is-held@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
 
       # Calculate next-version and generate change logs
       - name: Calculate next version
         if: ${{ steps.empty.outputs.is-empty == 'false' && steps.held.outputs.is-held == 'false' }}
         id: version
-        uses: newrelic/release-toolkit/next-version@v1
+        uses: newrelic/release-toolkit/next-version@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
       - name: Generate release notes
         if: ${{ steps.empty.outputs.is-empty == 'false' && steps.held.outputs.is-held == 'false' }}
-        uses: newrelic/release-toolkit/render@v1
+        uses: newrelic/release-toolkit/render@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
       - name: Update CHANGELOG.md
         if: ${{ steps.empty.outputs.is-empty == 'false' && steps.held.outputs.is-held == 'false' }}
-        uses: newrelic/release-toolkit/update-markdown@v1
+        uses: newrelic/release-toolkit/update-markdown@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
         with:
           version: ${{ steps.version.outputs.next-version }}
 

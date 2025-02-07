@@ -15,24 +15,24 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           fetch-depth: 0
 
       - name: Validate that the markdown is correct
-        uses: newrelic/release-toolkit/validate-markdown@v1
+        uses: newrelic/release-toolkit/validate-markdown@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
       - name: Generate YAML
-        uses: newrelic/release-toolkit/generate-yaml@v1
+        uses: newrelic/release-toolkit/generate-yaml@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
         with:
           excluded-dirs: .github
           excluded-files: README.md
           exit-code: "0"
       - name: Check if the release is empty
         id: empty
-        uses: newrelic/release-toolkit/is-empty@v1
+        uses: newrelic/release-toolkit/is-empty@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
       - name: Check if the release is held
         id: held
-        uses: newrelic/release-toolkit/is-held@v1
+        uses: newrelic/release-toolkit/is-held@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1
       - name: Calculate next version
         id: version
-        uses: newrelic/release-toolkit/next-version@v1
+        uses: newrelic/release-toolkit/next-version@59f313bda1fb098c8e0bad9c71d5c37131d55af7 # v1

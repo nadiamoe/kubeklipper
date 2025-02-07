@@ -20,7 +20,7 @@ klipper:
   image:
     repository: mkuf/klipper
     pullPolicy: IfNotPresent
-    tag: "v0.12.0"
+    tag: "v0.12.0@sha256:d84d4a4cb4a58dd771d99aea6f6c0859259d028f460846a8e64ecb5accfa588c"
 
   securityContext:
     readOnlyRootFilesystem: true
@@ -40,7 +40,7 @@ moonraker:
   image:
     repository: mkuf/moonraker
     pullPolicy: IfNotPresent
-    tag: "v0.8.0-314-gaadff0d"
+    tag: "v0.8.0-314-gaadff0d@sha256:b25e51c3abbd4069c9d47e4fc5125249f6ff0ab1cfc77e1ac0299d619f8a3f05"
 
   securityContext:
     readOnlyRootFilesystem: true

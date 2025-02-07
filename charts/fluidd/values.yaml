@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: docker.io/cadriel/fluidd
   pullPolicy: IfNotPresent
-  tag: "v1.23.3"
+  tag: "v1.23.3@sha256:2c8ba55400296b3cd99cfaa38492b6dafaaf595a7ac3afed968246f9bdde9580"
 
 imagePullSecrets: []
 nameOverride: ""
