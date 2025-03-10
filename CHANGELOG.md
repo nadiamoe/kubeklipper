@@ -5,6 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v0.12.23 - 2025-03-10
+
+### ⛓️ Dependencies
+- Updated alexxit/go2rtc to v1.9.9
+- Updated ghcr.io/linuxserver/cura:5.9.1 docker digest to a92942b
+
 ## v0.12.22 - 2025-03-09
 
 ### ⛓️ Dependencies
