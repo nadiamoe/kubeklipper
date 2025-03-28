@@ -5,6 +5,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v0.12.28 - 2025-03-28
+
+### ⛓️ Dependencies
+- Updated mkuf/ustreamer to v6.36
+- Updated ghcr.io/linuxserver/orcaslicer to v2.3.0
+- Updated ghcr.io/linuxserver/cura to v5.10.0
+
 ## v0.12.27 - 2025-03-24
 
 ### ⛓️ Dependencies
