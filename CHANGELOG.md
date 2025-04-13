@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v0.12.33 - 2025-04-13
+
+### ⛓️ Dependencies
+- Updated mkuf/klipper to v0.13.0
+
 ## v0.12.32 - 2025-04-08
 
 ### ⛓️ Dependencies
