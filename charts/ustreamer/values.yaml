@@ -8,7 +8,7 @@ image:
   repository: mkuf/ustreamer
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: v6.39@sha256:2f4e718f9f5029e84c1b19ee0d8c55fd0e1160c7acb6257535ca7b7530bc1147
+  tag: v6.40@sha256:3c26867d811b0aea3ae1f05061e2137f0826b58c963789617c8ac776cdbb7eb4
 
 imagePullSecrets: []
 nameOverride: ""
