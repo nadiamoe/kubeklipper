@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v0.12.69 - 2025-08-23
+
+### ⛓️ Dependencies
+- Updated ghcr.io/linuxserver/cura:5.10.2 docker digest
+
 ## v0.12.68 - 2025-08-20
 
 ### ⛓️ Dependencies
