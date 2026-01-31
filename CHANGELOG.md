@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v0.12.122 - 2026-01-31
+
+### ⛓️ Dependencies
+- Updated ghcr.io/linuxserver/orcaslicer:2.3.1 docker digest to d97a1a4
+
 ## v0.12.121 - 2026-01-27
 
 ### ⛓️ Dependencies
