@@ -5,7 +5,7 @@
 image:
   repository: ghcr.io/linuxserver/cura
   pullPolicy: IfNotPresent
-  tag: 5.11.0@sha256:328e38394ba17c808c5772b20a9426c6a66b9e52b4953796f7c86e7d62e18a12
+  tag: 5.11.0@sha256:e88c5970a034c9ece9adb364229e3f02d7dfb7877e729a4b868d808185262ac6
 
 imagePullSecrets: []
 nameOverride: ""
