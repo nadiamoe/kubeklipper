@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/linuxserver/orcaslicer
-  tag: "2.3.2@sha256:51daa3774b882cdc662cc1ad2bcbd08730dbd99e481b38743757d34271c14b8e"
+  tag: "2.3.2@sha256:91d0c62779f741b75fb287a79bc991d1a30c4d4507113f4232ae7a5592e82666"
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
