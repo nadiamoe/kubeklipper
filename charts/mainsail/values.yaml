@@ -9,7 +9,7 @@ replicaCount: 1
 image:
   repository: ghcr.io/mainsail-crew/mainsail
   pullPolicy: IfNotPresent
-  tag: "v2.14.0@sha256:fc83a9104b9b87e0779f85dfaff2e68dc33824cfae3d0a7ae602dddbd062d1d1"
+  tag: "v2.18.0@sha256:222ff8c42610ae8b062d7bdae11dd2c760df45a9033e0186073332b5b0754a14"
 
 imagePullSecrets: []
 nameOverride: ""
