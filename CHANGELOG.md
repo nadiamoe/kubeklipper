@@ -5,6 +5,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Features
+
+- Add opt-in PDB for klipper. If enabled, this will force cluster operators to manually delete the klipper pods for a 
+drain to succeed, blocking automated drain workflows and hopefully preventing disruption of print jobs.
+
 ## v0.12.193 - 2026-09-30
 
 ### ⛓️ Dependencies

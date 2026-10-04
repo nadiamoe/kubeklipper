@@ -1,0 +1,13 @@
+{{- if .Values.pdb.enabled }}
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "klipper.fullname" . }}
+  labels:
+    {{- include "klipper.labels" . | nindent 4 }}
+spec:
+  minAvailable: 100%
+  selector:
+    matchLabels:
+      {{- include "klipper.selectorLabels" . | nindent 6 }}
+{{- end }}
