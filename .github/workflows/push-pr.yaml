@@ -20,19 +20,19 @@ jobs:
           fetch-depth: 0
 
       - name: Validate that the markdown is correct
-        uses: newrelic/release-toolkit/validate-markdown@c07dd843317d8229f6e00272a976926306c261e2 # v1
+        uses: newrelic/release-toolkit/validate-markdown@2ab7c78ad354e9384afe3348b7db2ccf6f0be47e # v1
       - name: Generate YAML
-        uses: newrelic/release-toolkit/generate-yaml@c07dd843317d8229f6e00272a976926306c261e2 # v1
+        uses: newrelic/release-toolkit/generate-yaml@2ab7c78ad354e9384afe3348b7db2ccf6f0be47e # v1
         with:
           excluded-dirs: .github
           excluded-files: README.md
           exit-code: "0"
       - name: Check if the release is empty
         id: empty
-        uses: newrelic/release-toolkit/is-empty@c07dd843317d8229f6e00272a976926306c261e2 # v1
+        uses: newrelic/release-toolkit/is-empty@2ab7c78ad354e9384afe3348b7db2ccf6f0be47e # v1
       - name: Check if the release is held
         id: held
-        uses: newrelic/release-toolkit/is-held@c07dd843317d8229f6e00272a976926306c261e2 # v1
+        uses: newrelic/release-toolkit/is-held@2ab7c78ad354e9384afe3348b7db2ccf6f0be47e # v1
       - name: Calculate next version
         id: version
-        uses: newrelic/release-toolkit/next-version@c07dd843317d8229f6e00272a976926306c261e2 # v1
+        uses: newrelic/release-toolkit/next-version@2ab7c78ad354e9384afe3348b7db2ccf6f0be47e # v1
