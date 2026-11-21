@@ -20,7 +20,7 @@ klipper:
   image:
     repository: mkuf/klipper
     pullPolicy: IfNotPresent
-    tag: "v0.13.0@sha256:a7dd205c1c7cdb55283b9a3c70e1462818c5a7251bc4b0df139a3d8e5cc90dde"
+    tag: "v0.14.0@sha256:0571c3329facf7e25c82ab6556be64c5dc069c65059e38308dbd7308647de8e7"
 
   securityContext:
     readOnlyRootFilesystem: true
